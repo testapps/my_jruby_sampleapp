@@ -5,12 +5,12 @@ gem 'rails', '3.0.5'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-platforms :ruby do
-  gem 'mysql2'
-end
+#platforms :ruby do
+#  gem 'mysql2'
+#end
 
 platforms :jruby do
-  gem 'activerecord-jdbcmysql-adapter'
+  #gem 'activerecord-jdbcmysql-adapter'
 
   # As rails --database switch does not support derby, hsqldb, h2 nor mssql
   # as valid values, if you are not using SQLite, comment out the SQLite gem
@@ -18,6 +18,7 @@ platforms :jruby do
   # If you are using oracle, db2, sybase, informix or prefer to use the plain
   # JDBC adapter, comment out all the adapter gems below.
 
+  gem 'activerecord-jdbcsqlite3-adapter'
   # SQLite JDBC adapter
   #gem 'jdbc-sqlite3', :require => false
 

@@ -25,9 +25,9 @@ GEM
       arel (~> 2.0.2)
       tzinfo (~> 0.3.23)
     activerecord-jdbc-adapter (1.1.1)
-    activerecord-jdbcmysql-adapter (1.1.1)
+    activerecord-jdbcsqlite3-adapter (1.1.1)
       activerecord-jdbc-adapter (= 1.1.1)
-      jdbc-mysql (~> 5.1.0)
+      jdbc-sqlite3 (~> 3.6.0)
     activeresource (3.0.5)
       activemodel (= 3.0.5)
       activesupport (= 3.0.5)
@@ -37,7 +37,7 @@ GEM
     erubis (2.6.6)
       abstract (>= 1.0.0)
     i18n (0.5.0)
-    jdbc-mysql (5.1.13)
+    jdbc-sqlite3 (3.6.14.2.056-java)
     mail (2.2.15)
       activesupport (>= 2.3.6)
       i18n (>= 0.4.0)
@@ -73,6 +73,5 @@ PLATFORMS
   java
 
 DEPENDENCIES
-  activerecord-jdbcmysql-adapter
-  mysql2
+  activerecord-jdbcsqlite3-adapter
   rails (= 3.0.5)

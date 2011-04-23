@@ -1,27 +1,5 @@
+
 development:
-  adapter: jdbcmysql
-  encoding: utf8
-  reconnect: false
-  database: jruby_sample_app_development
-  pool: 5
-  username: root
-  password:
-
-test:
-  adapter: jdbcmysql
-  encoding: utf8
-  reconnect: false
-  database: jruby_sample_app_test
-  pool: 5
-  username: root
-  password:
-
-production:
-  adapter: jdbcmysql
-  encoding: utf8
-  reconnect: false
-  database: jruby_sample_app_production
-  pool: 5
-  username: root
-  password:
+  adapter: jdbcsqlite3
+  database: db/development.sqlite3
 
